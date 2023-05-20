@@ -54,7 +54,7 @@ Once you have completed the screener, the data will be submitted to the backend.
 
 ### 1. Problem: "Non-null assertions can only be used in TypeScript files."
 
-Solution: This error occurs when using a non-null assertion (!) in a JavaScript file instead of a TypeScript file. 
+Solution: This error occurs when using a non-null assertion (!) in a JavaScript file instead of a TypeScript file. I had to rewrite the code in a non Typescript manner 
 
 ### 2. Problem: Getting a 404 error on /screener endpoint.
 
@@ -83,7 +83,7 @@ Blade Templating: Laravel's Blade templating engine provides a clean and intuiti
 
 API Creation: Laravel offers powerful tools and features for building APIs. It provides a comprehensive routing system that allows you to define API endpoints with ease. Laravel's expressive syntax and conventions make it straightforward to create RESTful APIs. You can define resourceful routes, handle request validation, and format responses using JSON. Laravel's API integration capabilities, such as token-based authentication and rate limiting, help secure and control access to your API endpoints.
 
-By choosing Laravel, you benefit from a well-rounded framework that combines the ease of Blade templating for front-end development and seamless API creation. Laravel's cohesive ecosystem promotes rapid development, code reusability, and maintainability. It provides an excellent balance between simplicity and functionality, making it a preferred choice for building web applications and APIs.
+With Laravel, you benefit from a well-rounded framework that combines the ease of Blade templating for front-end development and seamless API creation. Laravel's cohesive ecosystem promotes rapid development, code reusability, and maintainability. It provides an excellent balance between simplicity and functionality, making it a preferred choice for building web applications and APIs.
 
 
 ## Ideal platform - hosting with AWS and Docker
