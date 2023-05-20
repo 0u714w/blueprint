@@ -9,7 +9,7 @@ This project is built with Laravel and uses a MySQL database. It provides a diag
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/project-name.git
+   git clone git@github.com:0u714w/blueprint.git
 
 2. Install Laravel dependencies. Make sure you have Laravel installed globally. If not, you can install it by following the official Laravel documentation:
 
@@ -54,27 +54,23 @@ Once you have completed the screener, the data will be submitted to the backend.
 
 ### 1. Problem: "Non-null assertions can only be used in TypeScript files."
 
-Solution: This error occurs when using a non-null assertion (!) in a JavaScript file instead of a TypeScript file. To fix this, either rename your file to .ts and use TypeScript or remove the non-null assertion and handle possible null values appropriately.
+Solution: This error occurs when using a non-null assertion (!) in a JavaScript file instead of a TypeScript file. 
 
 ### 2. Problem: Getting a 404 error on /screener endpoint.
 
-Solution: Make sure that the endpoint /screener is correctly defined in your Laravel routes file (web.php or api.php). Ensure that the route points to the correct controller method and that the method is implemented.
+Solution: I made sure that the endpoint /screener was correctly defined in my Laravel routes file (web.php or api.php). I ensured that the route pointed to the correct controller method and that the method is implemented.
 
-### 3. Problem: Displaying nothing on the page after executing the provided code.
+### 3. Problem: Error when accessing the getAttribute method on a null element.
 
-Solution: Check if the JSON data is correctly passed to the JavaScript code and assigned to the screenerData variable. Ensure that the HTML elements referenced in the JavaScript code exist in the DOM with the correct IDs.
+Solution: The error indicated that the element with the specified attribute name did not exist in the HTML. Double-checked that the <meta name="csrf-token"> element exists and has the content attribute. Made sure the element was placed correctly in the HTML structure.
 
-### 4. Problem: Error when accessing the getAttribute method on a null element.
+### 4. Problem: Error 419 (unknown status) when submitting data to /score-assessments.
 
-Solution: The error indicates that the element with the specified attribute name does not exist in the HTML. Double-check that the <meta name="csrf-token"> element exists and has the content attribute. Make sure the element is placed correctly in the HTML structure.
+Solution: Ensured that I included the CSRF token in the request headers. Verified that the token is generated correctly and passed to the JavaScript code.
 
-### 5. Problem: Error 419 (unknown status) when submitting data to /score-assessments.
+### 5. Problem: Getting a 500 (Internal Server Error) when accessing /score-assessments.
 
-Solution: A 419 error usually indicates a CSRF token mismatch. Ensure that you include the CSRF token in the request headers. Verify that the token is generated correctly and passed to the JavaScript code.
-
-### 6. Problem: Getting a 500 (Internal Server Error) when accessing /score-assessments.
-
-Solution: A 500 error suggests that there is an issue with the server-side code handling the /score-assessments route. Check your Laravel controller method responsible for handling the submission. Ensure the code properly processes the submitted data and returns an appropriate response.
+Solution: Checked my Laravel controller method responsible for handling the submission and ensured the code properly processed the submitted data and returns an appropriate response.
 
 
 ## Reasoning behind your technical choices- Easy-to-Use Blade Templating and Simple API Creation
