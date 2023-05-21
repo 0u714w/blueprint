@@ -32,7 +32,8 @@ DB_PASSWORD=
 
 5. Migrate the database
 
-```php artisan migrate
+```
+php artisan migrate
 ```
 
 ## Usage
