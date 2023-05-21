@@ -7,10 +7,10 @@ This project is built with Laravel and uses a MySQL database. It provides a diag
 ## Installation
 
 1. Clone the repository to your local machine:
-
    ```
    git clone git@github.com:0u714w/blueprint.git
-
+   ```
+   
 2. Install Laravel dependencies. Make sure you have Laravel installed globally. If not, you can install it by following the official Laravel documentation:
 
 3. Create a .env file based on the provided .env_example file:
@@ -31,6 +31,7 @@ DB_PASSWORD=
 4. Create a new database named "blueprint" in your MySQL server.
 
 5. Migrate the database
+
 ```php artisan migrate
 ```
 
